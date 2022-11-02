@@ -58,7 +58,10 @@ public class Person {
     }
 
     public PersonBuilder newChildBuilder() {
-        return new PersonBuilder().setSurname(surname).setAddress(address);
+        return new PersonBuilder()
+                .setSurname(surname)
+                .setAddress(address)
+                .setAge(0);
     }
 
     @Override
